@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .restaurant-cards {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .restaurant-card {
+        width: calc(25% - 10px);
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px rgba(128, 128, 128, 0.4);
+      }
+      .restaurant-image {
+        position: relative;
+      }
+      .restaurant-image .discount {
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        background-color: #e83940;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .restaurant-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+      .restaurant-details {
+        padding: 10px;
+        color: #696969;
+        font-size: 14px;
+      }
+
+      .group {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+      }
+      .restaurant-name {
+        font-weight: 600;
+        color: #000;
+      }
+
+      .rating {
+        background-color: #249634;
+        color: #fff;
+        font-weight: 700;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      @media (max-width: 780px) {
+        .restaurant-card {
+          width: calc(33.3% - 10px);
+        }
+      }
+      @media (max-width: 580px) {
+        .restaurant-card {
+          width: calc(50% - 10px);
+        }
+      }
+      @media (max-width: 480px) {
+        .restaurant-card {
+          width: 100%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="restaurant-cards">
+      <div class="restaurant-card">
+        <div class="restaurant-image">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/9/20942359/79d639339320287468131c420ab1c000.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+          />
+          <div class="discount">40% OFF Upto &#x20b9; 100</div>
+        </div>
+
+        <div class="restaurant-details">
+          <div class="group">
+            <p class="restaurant-name">Domino's Pizza</p>
+            <p class="rating">4.6 &#x2605;</p>
+          </div>
+
+          <div class="group">
+            <p>Pizza,Fast Food,Desserts</p>
+            <p>&#x20b9; 400 for two</p>
+          </div>
+
+          <div class="group">
+            <p>Jubille Hills,Hyderabad</p>
+            <p>3.7KM</p>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-card">
+        <div class="restaurant-image">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/chains/4/2800014/50fbb9dfc82d5ee2b98046bf3fbed7c1.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+          />
+          <div class="discount">30% OFF Upto &#x20b9; 150</div>
+        </div>
+
+        <div class="restaurant-details">
+          <div class="group">
+            <p class="restaurant-name">KFC</p>
+            <p class="rating">4.4 &#x2605;</p>
+          </div>
+
+          <div class="group">
+            <p>Fried Chicken,Fast Food</p>
+            <p>&#x20b9; 300 for two</p>
+          </div>
+
+          <div class="group">
+            <p>Banjara Hills,Hyderabad</p>
+            <p>2.7KM</p>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-card">
+        <div class="restaurant-image">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/chains/2/19082182/c8008523810583087401ff292c1763a3.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+          />
+          <div class="discount">25% OFF Upto &#x20b9; 75</div>
+        </div>
+
+        <div class="restaurant-details">
+          <div class="group">
+            <p class="restaurant-name">Burger King</p>
+            <p class="rating">4.2 &#x2605;</p>
+          </div>
+
+          <div class="group">
+            <p>Burgers,Fast Food</p>
+            <p>&#x20b9; 300 for two</p>
+          </div>
+
+          <div class="group">
+            <p>Madhapur,Hyderabad</p>
+            <p>5.1KM</p>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-card">
+        <div class="restaurant-image">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/chains/6/2800856/a9b023aacfd87c1074966fc4c4d31146_o2_featured_v2.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+          />
+          <div class="discount">15% OFF Upto &#x20b9; 200</div>
+        </div>
+
+        <div class="restaurant-details">
+          <div class="group">
+            <p class="restaurant-name">Barbeque Nation</p>
+            <p class="rating">4.7 &#x2605;</p>
+          </div>
+
+          <div class="group">
+            <p>BBQ,Buffet</p>
+            <p>&#x20b9; 800 for two</p>
+          </div>
+
+          <div class="group">
+            <p>Begumpet,Hyderabad</p>
+            <p>4.2KM</p>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-card">
+        <div class="restaurant-image">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/9/20942359/79d639339320287468131c420ab1c000.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+          />
+          <div class="discount">40% OFF Upto &#x20b9; 100</div>
+        </div>
+
+        <div class="restaurant-details">
+          <div class="group">
+            <p class="restaurant-name">Domino's Pizza</p>
+            <p class="rating">4.6 &#x2605;</p>
+          </div>
+
+          <div class="group">
+            <p>Pizza,Fast Food,Desserts</p>
+            <p>&#x20b9; 400 for two</p>
+          </div>
+
+          <div class="group">
+            <p>Jubille Hills,Hyderabad</p>
+            <p>3.7KM</p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </body>
+</html>
